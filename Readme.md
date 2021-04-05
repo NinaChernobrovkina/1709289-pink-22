@@ -1,7 +1,7 @@
 # Личный проект «Пинк» 
 
 * Студент: [Нина Чернобровкина](https://up.htmlacademy.ru/adaptive/22/user/1709289).
-* Наставник: `Неизвестно`.
+* Наставник: [Никита Сигов](https://htmlacademy.ru/profile/crazer).
 
 ---
 
