@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="UTF-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
   <header class="page-header">
@@ -12,18 +13,18 @@
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
-            <a>Главная</a>
+        <ul class="main-nav__list">
+          <li class="main-nav__item main-nav__item--active">
+            <a class="main-nav__link">Главная</a>
           </li>
-          <li class="site-list__item">
-            <a href="catalog.html">Фотографии</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="catalog.html">Фотографии</a>
           </li>
-          <li class="site-list__item">
-            <a href="form.html">Конкурс</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">Конкурс</a>
           </li>
-          <li class="site-list__item">
-            <a href="#">HTML Academy</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">HTML Academy</a>
           </li>
         </ul>
       </div>
@@ -35,19 +36,21 @@
       <div class="download__wrapper">
         <h2 class="visually-hidden">Скачать приложение</h2>
         <p class="download__title">Взгляните на жизнь иначе!</p>
-        <a href="#" class="download__button">Скачать приложение</a>
-        <ul class="download__list">
-          <li class="download__item">
-            <a href="#" class="download__link download__link--apple"><span class="visually-hidden">Скачать в Apple store</span></a>
-          </li>
-          <li class="download__item">
-            <a href="#" class="download__link download__link--android"><span class="visually-hidden">Скачать в Google play</span></a>
-          </li>
-          <li class="download__item">
-            <a href="#" class="download__link download__link--windows"><span class="visually-hidden">Скачать в Windows store</span></a>
-          </li>
-        </ul>
-        <p class="download__desc">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        <div class="download__download">
+          <a href="#" class="download__button">Скачать приложение</a>
+          <ul class="download__list">
+            <li class="download__item">
+              <a href="#" class="download__link download__link--apple"><span class="visually-hidden">Скачать в Apple store</span></a>
+            </li>
+            <li class="download__item">
+              <a href="#" class="download__link download__link--android"><span class="visually-hidden">Скачать в Google play</span></a>
+            </li>
+            <li class="download__item">
+              <a href="#" class="download__link download__link--windows"><span class="visually-hidden">Скачать в Windows store</span></a>
+            </li>
+          </ul>
+          <p class="download__desc">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
       </div>
     </section>
     <section class="features">
@@ -151,22 +154,24 @@
     </section>
     <section class="contacts">
       <h2 class="visually-hidden">Контакты</h2>
-      <div class="contacts__wrapper">
-        <p class="contacts__title">Остались вопросы?</p>
-        <p class="contacts__title">Свяжитесь с нами!</p>
-        <dl class="contacts__list">
-          <dt class="contacts__contact">Звоните</dt>
-          <dd class="contacts__value"><a class="contacts-phone" href="tel:+78125556666">+7 (812) 555-66-66</a></dd>
-          <dt class="contacts__contact">Приезжайте в гости</dt>
-          <dd class="contacts__value">ул. Большая Конюшенная, 19/8</dd>
-          <dt class="contacts__contact">Пишите</dt>
-          <dd class="contacts__value"><a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></dd>
-        </dl>
+      <div class="contacts__bg">
+        <div class="contacts__wrapper">
+          <p class="contacts__title">Остались вопросы?</p>
+          <p class="contacts__title">Свяжитесь с нами!</p>
+          <dl class="contacts__list">
+            <dt class="contacts__contact">Звоните</dt>
+            <dd class="contacts__value"><a class="contacts-phone" href="tel:+78125556666">+7 (812) 555-66-66</a></dd>
+            <dt class="contacts__contact">Приезжайте в гости</dt>
+            <dd class="contacts__value">ул. Большая Конюшенная, 19/8</dd>
+            <dt class="contacts__contact">Пишите</dt>
+            <dd class="contacts__value"><a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></dd>
+          </dl>
+        </div>
       </div>
-    </section>
-    <section class="map">
-      <h2 class="visually-hidden">Карта</h2>
-      <img src="" alt="" class="map__image">
+      <div class="contacts__map">
+        <h2 class="visually-hidden">Карта</h2>
+        <img src="" alt="" class="contacts__map-image">
+      </div>
     </section>
   </main>
   <footer class="page-footer">
