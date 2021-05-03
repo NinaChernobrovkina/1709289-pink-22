@@ -5,6 +5,12 @@
 }
 
 .tariffs__cell {
+  text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    text-transform: none;
+  }
+
   &--empty {
     background-color: transparent;
   }
