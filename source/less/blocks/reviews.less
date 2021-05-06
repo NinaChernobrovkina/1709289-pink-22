@@ -1,14 +1,26 @@
 .reviews__wrapper {
   padding: 0 20px;
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../../img/quotes.png");
+    background-repeat: no-repeat;
+  }
 }
 
 .reviews__author {
   font-weight: bold;
   font-size: 18px;
   text-align: center;
+  font-style: normal;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 24px;
+    line-height: 30px;
   }
 }
 
@@ -23,5 +35,10 @@
 
   @media (min-width: @tablet-width) {
     display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
   }
 }

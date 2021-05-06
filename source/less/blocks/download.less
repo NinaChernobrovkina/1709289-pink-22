@@ -1,7 +1,11 @@
 .download {
-  background-image: url("../../img/back-tablet.png");
+  background-image: url("../../img/back-tablet.jpg");
   background-repeat: no-repeat;
   background-position-x: center;
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../../img/back-desktop.jpg");
+  }
 }
 
 .download__wrapper {
@@ -9,6 +13,14 @@
   background-repeat: no-repeat;
   background-position-x: center;
   padding: 95px 20px 0;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../../img/phone-tablet.png");
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../../img/phone-desktop.png");
+  }
 }
 
 .download__title {
@@ -21,6 +33,11 @@
   @media (min-width: @tablet-width) {
     font-size: 40px;
     line-height: 48px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 50px;
+    line-height: 68px;
   }
 }
 
