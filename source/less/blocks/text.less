@@ -1,5 +1,37 @@
+.text {
+  padding: 44px 20px 42px;
+
+  @media (min-width: @tablet-width) {
+    padding: 89px 20px 70px;
+
+    &--bottom {
+      padding: 66px 20px 70px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 91px 20px 81px;
+
+    &--bottom {
+      padding: 58px 20px 70px;
+    }
+  }
+}
+
+.text__wrapper {
+  @media (min-width: @tablet-width) {
+    margin: 0 auto;
+    width: 500px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 600px;
+  }
+}
+
 .text__text {
   text-align: center;
+  margin: 0;
 
   @media (min-width: @tablet-width) {
     font-size: 18px;

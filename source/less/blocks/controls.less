@@ -1,0 +1,24 @@
+.controls {
+  display: flex;
+  justify-content: space-between;
+  width: 62px;
+}
+
+.controls__button {
+  display: block;
+  width: 12px;
+  height: 12px;
+  border: 3px solid @white;
+  background-color: fade(@basic-font, 30%);
+  padding: 0;
+  border-radius: 50%;
+
+  &--grey {
+    border: 3px solid @page-form-bg;
+  }
+
+  &--active {
+    border: 3px solid @basic-font;
+    background-color: @white;
+  }
+}

@@ -1,9 +1,40 @@
 .reviews__wrapper {
-  padding: 0 20px;
+  padding: 0 20px 11px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 20px;
+  }
 
   @media (min-width: @desktop-width) {
+    width: 940px;
+    margin: 0 auto;
+    padding: 0;
     background-image: url("../../img/quotes.png");
     background-repeat: no-repeat;
+    background-position: center 72px;
+    position: relative;
+  }
+}
+
+.reviews__list {
+  padding: 42px 0 31px;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    padding: 101px 0 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 184px 126px 32px;
+  }
+}
+
+.reviews__item {
+  display: none;
+
+  &--active {
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -12,21 +43,32 @@
   font-size: 18px;
   text-align: center;
   font-style: normal;
+  order: -1;
+  margin: 0 0 12px 0;
 
   @media (min-width: @tablet-width) {
+    order: 0;
     font-size: 20px;
-    line-height: 30px;
+    margin: 0;
   }
 
   @media (min-width: @desktop-width) {
     font-size: 24px;
-    line-height: 30px;
+    margin: 0 0 3px;
   }
 }
 
 .reviews__text {
+  margin: 0;
+  text-align: center;
+
   @media (min-width: @tablet-width) {
     font-size: 18px;
+    margin: 0 0 34px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 0 36px;
   }
 }
 
@@ -35,10 +77,49 @@
 
   @media (min-width: @tablet-width) {
     display: block;
+    text-align: center;
+    margin: 0 0 36px;
   }
 
   @media (min-width: @desktop-width) {
     font-size: 18px;
     line-height: 30px;
+    margin: 0;
+  }
+}
+
+.reviews__controls {
+  margin: 0 auto;
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.reviews__arrows {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}
+
+.reviews__arrow {
+  position: absolute;
+  top: 213px;
+  border: none;
+  outline: none;
+  width: 22px;
+  height: 41px;
+  background-color: transparent;
+
+  &--prev {
+    left: 0;
+    background-image: url("../../img/prev-arrow.svg");
+  }
+
+  &--next {
+    right: 0;
+    background-image: url("../../img/next-arrow.svg");
   }
 }

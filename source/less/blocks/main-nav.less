@@ -4,11 +4,60 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 32px;
-  text-align: center;
 
   @media (min-width: @desktop-width) {
     font-weight: normal;
     text-transform: none;
     line-height: 18px;
+  }
+
+  &:hover {
+    color: @pink;
+  }
+
+  &:active {
+    color: fade(@pink, 30%);
+
+    @media (min-width: @desktop-width) {
+      color: fade(@white, 30%);
+    }
+  }
+}
+
+.main-nav__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.main-nav__item {
+  padding: 15px 0;
+  box-shadow: 0 1px 0 @black, inset 0 1px 0 fade(@white, 15%);
+  text-align: center;
+  margin-bottom: 1px;
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__list {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .main-nav__item {
+    position: relative;
+    box-shadow: none;
+    margin-left: 79px;
+    padding: 40px 0 40px;
+    margin-bottom: 0;
+
+    &--active::after {
+      content: "";
+      position: absolute;
+      height: 2px;
+      width: 100%;
+      background-color: @white;
+      left: 0;
+      bottom: 34px;
+    }
   }
 }

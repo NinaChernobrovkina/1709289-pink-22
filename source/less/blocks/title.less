@@ -2,9 +2,34 @@
   background-image: url("../../img/back-tablet.jpg");
   background-repeat: no-repeat;
   background-position-x: center;
+  padding: 95px 20px 43px;
+  box-sizing: border-box;
+  min-height: 237px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/back-tablet@2x.jpg");
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 177px 20px 59px;
+    min-height: 440px;
+  }
 
   @media (min-width: @desktop-width) {
+    padding: 168px 0 88px;
+    min-height: 394px;
     background-image: url("../../img/back-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/back-desktop@2x.jpg");
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .title__wrapper {
+    width: 940px;
+    margin: 0 auto;
   }
 }
 
@@ -13,6 +38,7 @@
   font-size: 24px;
   line-height: 33px;
   text-align: center;
+  margin: 0;
   color: @white;
 
   @media (min-width: @tablet-width) {

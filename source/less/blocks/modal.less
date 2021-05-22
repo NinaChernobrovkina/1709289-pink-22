@@ -1,0 +1,128 @@
+.modal {
+  display: none;
+  position: fixed;
+  width: 100%;
+  margin-top: -145px;
+  top: 50%;
+  background: @white;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  border-radius: 1px;
+
+  &--show {
+    display: block;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 460px;
+    left: 50%;
+    margin-left: -230px;
+    margin-top: -190px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 780px;
+    left: 50%;
+    margin-left: -390px;
+  }
+}
+
+.modal__text-wrapper {
+  padding: 39px 20px 34px;
+
+  @media (min-width: @tablet-width) {
+    padding: 41px 41px 29px;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 41px 41px 62px;
+  }
+}
+
+.modal__title {
+  margin: 0 0 24px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: @black;
+
+  @media (min-width: @tablet-width) {
+    width: 329px;
+    margin: 0 auto 23px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: auto;
+  }
+}
+
+.modal__text {
+  margin: 0;
+  line-height: 24px;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    width: 340px;
+    margin: 0 auto;
+    font-size: 18px;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 378px;
+  }
+}
+
+.modal__button-wrapper {
+  padding: 7px 20px 50px;
+
+  @media (min-width: @tablet-width) {
+    padding: 5px 20px 50px;
+  }
+
+  &--grey {
+    padding: 50px 20px 50px;
+    background-color: @page-form-bg;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: @page-form-bg;
+    padding: 50px 20px 50px;
+  }
+}
+
+.modal__buton {
+  display: block;
+  padding: 0;
+  text-align: center;
+  background-color: @submit-bg;
+  border: 2px solid @submit-bg;
+  border-radius: 1px;
+  color: @white;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 59px;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  width: 100%;
+
+  @media (min-width: @tablet-width) {
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  &:hover {
+    background-color: @submit-bg-hover;
+  }
+
+  &:active {
+    color: fade(@white, 30%);
+  }
+
+  @media (min-width: @desktop-width) {
+    &--wide {
+      width: 460px;
+    }
+  }
+}

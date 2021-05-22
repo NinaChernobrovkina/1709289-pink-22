@@ -5,3 +5,19 @@
   color: @basic-font;
   height: 100%;
 }
+
+.page__body {
+  margin: 0;
+}
+
+.page-header--open + .page__main {
+  margin-top: -67px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: -110px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 0;
+  }
+}
